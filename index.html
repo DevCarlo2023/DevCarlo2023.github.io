@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500;1,900&family=Open+Sans:ital@1&family=Ruda:wght@500&family=Sriracha&family=Ysabeau+Office:ital,wght@1,1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script> 
+    <title>Porfolio Carlo Peña</title>
+</head>
+<body>
+     <!-- MENU ENCABEZADO -->
+     <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/icono.png" alt="" width="50px" height="50px">
+                </a>
+                </div>
+            <nav id="nav navegacion">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()" >INICIO</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#experiencias" onclick="seleccionar()" >EXPERIENCIAS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()" >PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()" >CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Hero -->
+     <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-present">
+                <p>Hola, me llamo <span>Carlo Peña</span>, y soy estudiante de programación web con una pasión por los desafíos tecnológicos y un firme deseo de crecimiento profesional. </p>
+            </div>
+            <div class="redes">
+                <a href="https://wa.me/59897843720" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/carlope/" target="_blank"><i class="fa-brands fa-linkedin-in" target="_blank"></i></a>  
+                <a href="https://www.instagram.com/carlo_p.a/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCBbICrXxpyRAEh4xuskHgzw" target="_blank"><i class="fa-brands fa-youtube" target="_blank"></i></a>
+               
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill ">
+                            <div class="progreso html">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso css">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVASCRIPT</span>
+                        <div class="barra-skill">
+                            <div class="progreso js">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>UI/UX</span>
+                        <div class="barra-skill">
+                            <div class="progreso ux">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>COMUNICACION</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TRABAJO EN EQUIPO</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajoeq">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CREATIVIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso creativo">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>RESPONSABILIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso responsable">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencias -->
+    <section id="experiencias" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Experiencias</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Análisis De Sistemas</h4>
+                        <span class="casa">Universidad Nacional de Piura </span>
+                        <span class="fecha">2011 - 2014</span>
+                        <p>Como estudiante de análisis de sistemas, he aprendido a diseñar y administrar soluciones tecnológicas. Me especializo en el análisis de sistemas, programación, bases de datos, sistemas operativos y seguridad informática. </p><br>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo Web Completo HTML5,CSS3,JS, AJAX PHP y MySQL</h4>
+                        <span class="casa">Udemy</span>
+                        <span class="fecha">2022 - Actualmente</span>
+                        <p>Estoy aprendiendo y especializándome, mi enfoque se centra en crear sitios web interactivos y dinámicos, utilizando tecnologías modernas para brindar experiencias de usuario excepcionales."</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Asistente Logístico</h4>
+                        <span class="casa">Romy Comunicaciones - Uy</span>
+                        <span class="fecha">Actualemente</span>
+                        <p>Me encargo de coordinar y gestionar eficientemente las actividades administrativas y operativas. Mi responsabilidad es asegurar que los procesos logísticos se realicen de manera fluida y efectiva, supervisando el inventario, coordinando envíos y entregas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Freelancer</h4>
+                        <span class="casa">Dinámica Piura - Perú</span>
+                        <span class="fecha">2023</span>
+                        <p>Participé en el diseño, desarrollo y alojamiento de la página web corporativa. Utilicé mis habilidades en diseño web y desarrollo para crear una presencia en línea profesional y responsiva. Estoy orgulloso de haber contribuido al éxito de la empresa a través de este proyecto.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+                <div class="galeria">
+                <div class="card">  
+                    <div class="proyecto">
+                        <img src="img/portfolio1.webp" alt="" width="340px" height="200px">
+                        <div class="overlay">
+                            <h3>Html & Css</h3>
+                            <p>Javascript</p>
+                        </div>
+                    </div>
+                    <a href="https://www.dinamicapiura.com" target="_blank" style="text-decoration: none;" ><input class="visitar" type="button" value="Visitar"></a>
+                </div>   
+              
+
+                <div class="card">
+                    <div class="proyecto">
+                    <img src="img/portfolio2.webp" alt="" width="340px" height="200px">
+                    <div class="overlay">
+                        <h3>Html & Css</h3>
+                        <p>Sass & Gulp</p>
+                     </div>
+                    </div>
+                    <a href="https://blogdecafecarlo.netlify.app" target="_blank" style="text-decoration: none;" ><input class="visitar" type="button" value="Visitar"></a>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+        <h2>Contácto</h2>
+            <form class="formulario">
+            <fieldset>
+                <legend></legend>
+                    <div class="contenidos">
+                    <div class="campo">
+                        <label for="nombre">Nombre: </label>
+                        <input id="nombre" type="text" placeholder="Tu Nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="asunto">Asunto: </label>
+                        <input id="asunto" type="text" placeholder="Tu Asunto">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail: </label>
+                        <input id="email" type="email" placeholder="Tu Email">
+                    </div>
+
+                    <div class="campo">
+                        <label for="tel">Telefono: </label>
+                        <input id="tel" type="tel" placeholder="Tu Teléfono">
+                    </div>
+
+                    <div class="campo">
+                        <label for="tel">Mensaje: </label>
+                        <textarea id="tel" cols="20" rows="10"></textarea>
+                    </div>
+                    </div>
+                    <input class="visitar" type="button" value="Enviar">
+                </fieldset>            
+            </form> 
+        </section>  
+    
+    <!-- Footer     -->
+    <footer class="footer">
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <p>Jóvenes A Programar 2023 - Carlo Peña</p>
+    </footer>
+
+</body>
+</html>
